@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zeey Zeey</title>
+	<link type="text/css" rel="stylesheet" href="shop.css" />
+</head>
+<body>
+<script src="shop2.js"></script>
+<div class="header">
+
+Zee Zee Glamours
+</div>
+
+<div class="content">
+<p class="comments">Please Note that all Services are paid in Nigerian Naira (&#8358;). </p>
+<form name="form1" method="post" action="shop2.php">
+<table name="tt" width="500" height="300" align="center" cellspacing="10">
+<tr>
+<td class="top"> Service </td>
+<td class="top">Unit Cost</td>
+<td class="top">Quantity</td>
+<td class="top">Total Cost</td>
+</tr>
+
+<tr>
+<td><span><input type="button" name="henna" id="henna" value="Henna" class="buttons" onclick="henna_clicked();"/></span> </td>
+<td> <span><input type="button" name="price" id="price" value="25,000" class="buttons" onclick="henna_clicked();" /> </span> </td>
+<td><span><input type="text" name="quant" id="quant" value="1" min="1" readonly class="buttons"  ondblclick="henna_doubleclicked();" onclick="henna_calculation();" /> </span> </td>
+<td><input type="text" name="total" id="total" value="25000" class="totals"  readonly /> </td>
+</tr>
+</tr>
+<td><span><input type="button" name="makeup" value="Make Up" class="buttons" onclick="makeup_clicked();"/> </span> </td>
+<td><span><input type="button" name="cost" value="50,000" class="buttons" onclick="makeup_clicked();"/> </span> </td>
+<td><span><input type="text" name="quant2" id="" value="1" readonly class="buttons" ondblclick="makeup_double_clicked();" onclick="makeup_calculation();" /></span> </td>
+<td><input type="text" name="total2" id="total2" value="50000" class="totals" readonly/> </td>
+</tr>
+<tr>
+<td colspan="3" align="right" style="border-radius:25px 0px 0px 25px;" class="buttons">Total  Cost&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" name="sumtotal" style="border-radius:0px 25px 25px 0px;" value= "75000" class="totals" readonly/> </td>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td><span> <input type="Submit" class="choice"value="Purchase" onclick="purchaseClicked()" /></span></td>
+<td><span><input type="reset" class="choice" style="background-color:orange;" value="Reset"/></span></td>
+<td><span><a href="viewrecords.html"> <input type="button" class="choice" style="background-color:skyblue;" value="View Records"/></a></span></td>
+<td>  </td>
+</tr>
+</table>
+</form>
+<p class="keys"> Guidelines:
+	<ol>
+		<li class="keys"> Select a product </li>
+		<li class="keys"> Select the quantity </li>
+		<li class="keys"> Double click on the quantity to increase it </li>
+		<li class="keys"> Click purchase to place order or reset to reset order</li>
+	</ol>
+</p>
+<p class="comments"> Thank you for patronizing us.</p>
+</div>
+<div class="footer">
+	All rights reserved. &copy; 2021
+</div>
+
+</body>
+</html>
